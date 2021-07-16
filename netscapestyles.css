@@ -221,11 +221,13 @@ hr {
     position: relative;
     background: none;
     border: none;
-    margin-left: 22px;
+    margin-left: 12px;
     margin-top: 6px;
+    width: 70px;
 }
 
 .nav-button img {
+    margin-top: 3px;
     height: 45px;
     width: auto;
 }
@@ -244,7 +246,7 @@ hr {
     border-left: 2px solid #000000; 
     border-right: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff; 
-    margin-right: -4px;
+    margin-right: 0px;
 }
 
 #search {
@@ -363,9 +365,32 @@ hr {
     position: absolute;
 }
 
+#desktop-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-a {
-    cursor: url(./imgs/25.gif);
+.desktop-icon {
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.desktop-icon img{
+    margin: auto;
+    width: 50px;
+}
+
+.desktop-icon p {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'epilepsy_sansmedium';
+    font-size: 17px;
+    margin: auto;
 }
 
 
@@ -381,8 +406,13 @@ a {
 ::-webkit-scrollbar-track {
     background-color: #ffffff;
     opacity: 0;
-    background-size: 2px 2px;
-    background-image: repeating-linear-gradient(45deg, #8b8b8b 0, #8b8b8b 0.6px, #ffffff00 0, #ffffff00 50%);
+    background-image:
+    linear-gradient(45deg, #ccc 25%, transparent 25%), 
+    linear-gradient(135deg, #ccc 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #ccc 75%),
+    linear-gradient(135deg, transparent 75%, #ccc 75%);
+    background-size: 4px 4px;
+    background-position:0 0, 2px 0, 2px -2px, 0px 2px;
 
 }
 
